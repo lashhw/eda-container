@@ -1,2 +1,2 @@
 #!/bin/bash
-tcsh -c "source /usr/cad/licscript; $SHELL"
+tcsh -c "source /usr/cad/licscript; zsh"

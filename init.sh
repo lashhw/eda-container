@@ -21,5 +21,6 @@ dnf install -y sudo zsh tcsh vim firefox iputils iproute redhat-lsb-core binutil
 ln -s /cad /usr/cad
 
 read -p "Username: " USERNAME
-passwd $USERNAME
-usermod -aG wheel $USERNAME
+passwd ${USERNAME}
+mkhomedir_helper ${USERNAME}
+usermod -aG wheel ${USERNAME}
