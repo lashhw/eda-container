@@ -1,4 +1,7 @@
 #!/bin/bash
+mkdir -p d
+mkdir -p cad
+mkdir -p home
 podman create \
     --name=rhel8 \
     --publish=22222:22 \
