@@ -1,8 +1,6 @@
 #!/bin/bash
 set -x
 
-read -p "Username: " USERNAME
-
 subscription-manager register
 subscription-manager release --set=8.9
 dnf config-manager --disable ubi-8-appstream-rpms
@@ -22,6 +20,6 @@ dnf install -y sudo zsh tcsh vim firefox iputils iproute redhat-lsb-core binutil
 
 ln -s /cad /usr/cad
 
-useradd $USERNAME
+read -p "Username: " USERNAME
 passwd $USERNAME
 usermod -aG wheel $USERNAME
