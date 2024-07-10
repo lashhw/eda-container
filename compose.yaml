@@ -1,0 +1,16 @@
+services:
+  main:
+    image: registry.access.redhat.com/ubi8-init:8.9
+    ports: 
+      - "22222:22"
+    volumes:
+      - ./d:/mnt/d
+      - ./cad:/cad
+      - ./home:/home
+      - type: bind
+        source: /tmp/.X11-unix
+        target: /tmp/.X11-unix
+    extra_hosts:
+      - "lshc:140.126.24.16"
+    environment:
+      - DISPLAY=${DISPLAY}

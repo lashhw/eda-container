@@ -1,0 +1,6 @@
+source /usr/cad/mentor/CIC/catapult.cshrc
+source /usr/cad/mentor/CIC/questa_sim.cshrc
+source /usr/cad/synopsys/CIC/lc.cshrc
+source /usr/cad/synopsys/CIC/synthesis.cshrc
+source /usr/cad/synopsys/CIC/vcs.cshrc
+source /usr/cad/synopsys/CIC/verdi.cshrc
