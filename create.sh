@@ -4,7 +4,6 @@ mkdir -p cad
 mkdir -p home
 podman create \
     --name=rhel8 \
-    --publish=22222:22 \
     --add-host=lshc:140.126.24.16 \
     --volume ./d:/mnt/d \
     --volume ./cad:/cad \
